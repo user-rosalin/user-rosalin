@@ -25,4 +25,14 @@ public class JerseyHelloWorld {
 	        //Simply return the parameter passed as message
 	        return Response.status(200).entity(output).build();
 	    }
+	
+	
+	  @GET
+	  @Path("/{message1}")
+	    public Response getname1(@PathParam("message1") String msg)
+	    {
+	        String output = "Message requested : " + msg;
+	        //Simply return the parameter passed as message
+	        return Response.status(200).entity(output).build();
+	    }
 }
