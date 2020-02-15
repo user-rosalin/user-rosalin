@@ -36,12 +36,4 @@ public class JerseyHelloWorld {
 	        return Response.status(200).entity(output).build();
 	    }
 
-	  @GET
-	  @Path("/{message13}")
-	    public Response getname4(@PathParam("message1") String msg)
-	    {
-	        String output = "Message requested : " + msg;
-	        //Simply return the parameter passed as message
-	        return Response.status(200).entity(output).build();
-	    }
 }
