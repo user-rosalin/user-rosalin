@@ -42,6 +42,8 @@ public class JerseyHelloWorld {
 	    {
 	        String output = "Message requested : " + msg;
 	        //Simply return the parameter passed as message
+	        System.out.println("e3nd of method processing");
+
 	        return Response.status(200).entity(output).build();
 	    }
 
