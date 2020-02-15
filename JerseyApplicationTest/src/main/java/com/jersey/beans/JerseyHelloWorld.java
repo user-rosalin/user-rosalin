@@ -21,6 +21,7 @@ public class JerseyHelloWorld {
 	  @Path("/{message}")
 	    public Response getname(@PathParam("message") String msg)
 	    {
+		  System.out.println("entered into method");
 	        String output = "Message requested : " + msg;
 	        //Simply return the parameter passed as message
 	        return Response.status(200).entity(output).build();
